@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milen Arro-Cannarsa — Economist · PhD Candidate, University of Bern</title>
+<meta name="description" content="Milen Arro-Cannarsa is a PhD candidate in economics at the University of Bern and research associate at the Study Center Gerzensee (Foundation of the Swiss National Bank). Research on monetary policy, safe-haven currencies, and machine-learning nowcasting.">
+<meta property="og:title" content="Milen Arro-Cannarsa — Economist">
+<meta property="og:description" content="PhD candidate in economics, University of Bern. Research associate, Study Center Gerzensee — Foundation of the Swiss National Bank. Monetary economics, international macroeconomics, nowcasting.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Milen Arro-Cannarsa",
+  "jobTitle": "PhD Candidate in Economics",
+  "affiliation": [
+    {"@type": "Organization", "name": "University of Bern"},
+    {"@type": "Organization", "name": "Study Center Gerzensee"}
+  ],
+  "email": "milen.arro@szgerzensee.ch",
+  "knowsAbout": ["Monetary economics", "International macroeconomics", "Quantitative macroeconomics", "Business-cycle analysis", "Machine learning", "Nowcasting"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FBFAF7;
+    --ink: #20201D;
+    --muted: #6E6C64;
+    --faint: #9C9A90;
+    --hairline: #E5E2DA;
+    --accent: #2E4B3F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 2rem; }
+
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(251, 250, 247, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav-inner {
+    max-width: 920px; margin: 0 auto; padding: 1.1rem 2rem;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .nav-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px; font-weight: 600; letter-spacing: 0.04em;
+    color: var(--ink); text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 1.8rem; }
+  .nav-links a {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+
+  .hero {
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4rem;
+    align-items: start; padding: 5rem 0;
+    border-bottom: 1px solid var(--hairline);
+    animation: rise 0.7s ease-out both;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .hero { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+  .eyebrow {
+    font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 1.4rem;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 7vw, 62px); font-weight: 300; font-style: italic;
+    line-height: 1.04; margin-bottom: 1.8rem;
+  }
+  .hero-tagline {
+    font-size: 13px; letter-spacing: 0.07em; line-height: 2;
+    color: var(--muted); margin-bottom: 2.2rem; max-width: 40ch;
+  }
+  .hero-links { display: flex; gap: 1.6rem; flex-wrap: wrap; }
+  .hero-link {
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink); text-decoration: none;
+    border-bottom: 1px solid var(--ink); padding-bottom: 3px;
+    transition: opacity 0.2s;
+  }
+  .hero-link:hover { opacity: 0.55; }
+
+  .cv-download {
+    display: inline-block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); text-decoration: none; border: 1px solid var(--accent);
+    padding: 13px 26px; transition: background 0.2s, color 0.2s;
+  }
+  .cv-download:hover { background: var(--accent); color: var(--paper); }
+  .cv-updated { font-size: 11px; letter-spacing: 0.08em; color: var(--faint); margin-top: 1rem; }
+
+  .photo img {
+    width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block;
+    filter: saturate(0.92);
+  }
+  .photo-fallback {
+    width: 100%; aspect-ratio: 3/4; display: none;
+    flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+    background: #F1EFE9; border: 1px solid var(--hairline);
+    color: var(--faint); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  }
+
+  section { padding: 4.5rem 0; border-bottom: 1px solid var(--hairline); }
+  section:last-of-type { border-bottom: none; }
+  .section-header { display: flex; align-items: baseline; gap: 1.4rem; margin-bottom: 2.4rem; }
+  .section-number { font-size: 10px; letter-spacing: 0.2em; color: var(--faint); }
+  .section-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px; font-weight: 300; font-style: italic;
+  }
+
+  .about-body { font-size: 14.5px; line-height: 2; color: #4A4943; max-width: 660px; }
+  .about-body p { margin-bottom: 1.2rem; }
+  .fields { display: flex; gap: 3.5rem; flex-wrap: wrap; margin-top: 2.2rem; }
+  .field-group { min-width: 180px; }
+  .field-group h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 9px; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--faint); margin-bottom: 0.7rem;
+  }
+  .field-group p { font-size: 13px; color: var(--muted); line-height: 1.9; }
+
+  .paper { padding: 2.2rem 0; border-top: 1px solid var(--hairline); }
+  .paper:last-of-type { border-bottom: 1px solid var(--hairline); }
+  .paper-meta {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--faint); margin-bottom: 0.7rem;
+  }
+  .paper h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px; font-weight: 400; line-height: 1.3; margin-bottom: 0.4rem;
+  }
+  .paper-authors { font-size: 12px; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 0.9rem; }
+  .paper-abstract { font-size: 13px; line-height: 1.95; color: #4A4943; max-width: 640px; margin-bottom: 1.1rem; }
+  .paper-tags { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .tag {
+    display: inline-block; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+    border: 1px solid #CFCCC2; padding: 4px 11px; color: var(--muted); text-decoration: none;
+  }
+  a.tag { color: var(--accent); border-color: var(--accent); transition: opacity 0.2s; }
+  a.tag:hover { opacity: 0.65; }
+
+  .refs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
+  .ref { background: #F5F3EE; padding: 1.8rem; }
+  .ref h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; margin-bottom: 0.25rem; }
+  .ref-title { font-size: 11.5px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.7; margin-bottom: 0.9rem; }
+  .ref a { font-size: 11.5px; letter-spacing: 0.03em; text-decoration: none; }
+  .ref a:hover { text-decoration: underline; }
+
+  footer { padding: 3.5rem 0 4rem; border-top: 1px solid var(--hairline); }
+  .contact-row { display: flex; gap: 3.5rem; flex-wrap: wrap; }
+  .contact-item h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 9px; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--faint); margin-bottom: 0.5rem;
+  }
+  .contact-item p, .contact-item a { font-size: 13px; color: var(--muted); text-decoration: none; line-height: 1.8; }
+  .contact-item a:hover { color: var(--accent); }
+  .colophon { margin-top: 3rem; font-size: 10px; letter-spacing: 0.12em; color: var(--faint); }
+
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 0; }
+    .photo { max-width: 320px; }
+    .nav-links { gap: 1.1rem; }
+    section { padding: 3.2rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">Milen Arro-Cannarsa</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#cv">CV</a>
+      <a href="#references">References</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap" id="top">
+
+  <header class="hero">
+    <div>
+      <p class="eyebrow">PhD Candidate in Economics · Monetary Policy &amp; Business-Cycle Analysis</p>
+      <h1>Milen<br>Arro-Cannarsa</h1>
+      <p class="hero-tagline">University of Bern<br>Research Associate, Study Center Gerzensee<br>Foundation of the Swiss National Bank</p>
+      <div class="hero-links">
+        <a class="hero-link" href="#research">Research</a>
+        <a class="hero-link" href="#cv">Curriculum vitae</a>
+        <a class="hero-link" href="mailto:milen.arro@szgerzensee.ch">Contact</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="photo.jpg" alt="Portrait of Milen Arro-Cannarsa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="photo-fallback"><span>Photo coming soon</span></div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-body">
+      <p>I am a monetary economist completing my PhD at the University of Bern under the supervision of Prof. Pierpaolo Benigno, and a research associate at the Study Center Gerzensee, the foundation of the Swiss National Bank, where I support the doctoral program and the courses for central bankers with exercise sessions and software training.</p>
+      <p>My research gives the safe-haven story a structural framework. In my job market paper, I develop an open-economy New Keynesian model in which foreign appetite for a country's liquid assets jointly produces appreciation, disinflation, and a liquidity trap of foreign origin, and in which the central bank's balance sheet becomes a second policy instrument. In plain terms, the paper answers two questions every Swiss institution lives with: why Swiss interest rates get stuck at low levels, and what moves the franc in a crisis.</p>
+      <p>The other half of my work is empirical. I co-authored an SNB working paper on machine-learning nowcasts of Swiss GDP. Before that, I spent a year in the SNB's business-cycle analysis unit, where I maintained the short-term forecasting models and carried sole responsibility for the foreign-trade forecasts for six months. Theory taught me how business cycles work, whereas forecasting made me fast and good with data.</p>
+    </div>
+    <div class="fields">
+      <div class="field-group">
+        <h3>Research fields</h3>
+        <p>Monetary economics<br>International macroeconomics<br>Quantitative macroeconomics<br>Business-cycle analysis</p>
+      </div>
+      <div class="field-group">
+        <h3>Methods</h3>
+        <p>Open-economy New Keynesian (DSGE) models<br>Machine learning &amp; nowcasting<br>Time-series analysis (VAR, state-space models)<br>Optimal policy analysis</p>
+      </div>
+      <div class="field-group">
+        <h3>Languages</h3>
+        <p>German (C2) · English (C2)<br>Estonian (native)<br>Italian (B1) · Russian (B1)</p>
+      </div>
+      <div class="field-group">
+        <h3>Contact</h3>
+        <p><a href="mailto:milen.arro@szgerzensee.ch" style="color: var(--muted); text-decoration: none;">milen.arro@szgerzensee.ch</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2>Research</h2>
+    </div>
+
+    <article class="paper">
+      <p class="paper-meta">Job market paper · 2026</p>
+      <h3>Flight to Liquidity: Monetary Policy in an Open Economy</h3>
+      <p class="paper-abstract">Safe-haven economies experience global crises as a package: a surging currency, falling inflation, and a policy rate driven to its floor. I develop an open-economy New Keynesian model in which domestic assets carry a convenience yield because they provide liquidity services to the rest of the world. A flight to liquidity, matched to the franc's 2010–2011 appreciation, reproduces the joint dynamics of appreciation, disinflation, and a rate cut deep enough to hit the lower bound: a trap with a foreign origin, driven not by weak domestic demand but by the world's appetite for domestic assets. Supplying the liquid asset stabilizes the domestic economy exactly and removes the reason the trap arises, while a residual appreciation remains. Stabilizing the exchange rate instead imports an inflationary boom and requires an operation ten times larger, on the scale of the SNB balance sheet under the currency floor.</p>
+      <div class="paper-tags">
+        <span class="tag">Draft available on request</span>
+      </div>
+    </article>
+
+    <article class="paper">
+      <p class="paper-meta">SNB Working Papers 2024-06 · Swiss National Bank</p>
+      <h3>Nowcasting GDP: What Are the Gains from Machine Learning Algorithms?</h3>
+      <p class="paper-authors">with Rolf Scheufele</p>
+      <p class="paper-abstract">We compare penalized regressions (LASSO, ridge, elastic net), tree ensembles (bagging, random forest, gradient boosting), and support vector regression for nowcasting Swiss GDP, using a mixed-frequency data set of more than 1,100 series that accounts for publication lags. After the Great Recession, all machine-learning methods beat the univariate benchmark by up to 28% in out-of-sample RMSE; ridge, elastic net, and SVR perform best.</p>
+      <div class="paper-tags">
+        <a class="tag" href="https://www.snb.ch/en/publications/research/working-papers/2024/working_paper_2024_06" target="_blank" rel="noopener">Working paper — SNB</a>
+      </div>
+    </article>
+
+    <article class="paper">
+      <p class="paper-meta">Work in progress</p>
+      <h3>Optimal Supply of Liquidity</h3>
+      <p class="paper-abstract">I study the optimal supply of safe, liquid assets in an open economy, where the government trades off providing liquidity to domestic agents against extracting seigniorage from foreign investors.</p>
+      <div class="paper-tags">
+        <span class="tag">In progress</span>
+      </div>
+    </article>
+  </section>
+
+  <section id="cv">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2>Curriculum vitae</h2>
+    </div>
+
+    <a class="cv-download" href="Arro-Cannarsa_CV.pdf">Download CV (PDF)</a>
+    <p class="cv-updated">Last updated July 2026</p>
+  </section>
+
+  <section id="references">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2>References</h2>
+    </div>
+    <div class="refs">
+      <div class="ref">
+        <h3>Prof. Pierpaolo Benigno</h3>
+        <p class="ref-title">PhD Advisor<br>University of Bern</p>
+        <a href="mailto:pierpaolo.benigno@unibe.ch">pierpaolo.benigno@unibe.ch</a>
+      </div>
+      <div class="ref">
+        <h3>Prof. Matthias Lutz</h3>
+        <p class="ref-title">Economic Advisor<br>Swiss National Bank</p>
+        <a href="mailto:matthias.lutz@snb.ch">matthias.lutz@snb.ch</a>
+      </div>
+      <div class="ref">
+        <h3>Prof. Martin Brown</h3>
+        <p class="ref-title">Director<br>Study Center Gerzensee</p>
+        <a href="mailto:martin.brown@szgerzensee.ch">martin.brown@szgerzensee.ch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contact-row">
+      <div class="contact-item">
+        <h3>Email</h3>
+        <a href="mailto:milen.arro@szgerzensee.ch">milen.arro@szgerzensee.ch</a>
+      </div>
+      <div class="contact-item">
+        <h3>Address</h3>
+        <p>Study Center Gerzensee<br>Dorfstrasse 2, 3115 Gerzensee<br>Switzerland</p>
+      </div>
+      <div class="contact-item">
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/milen-arro-cannarsa-47684812a/">linkedin.com/in/milen-arro-cannarsa</a>
+      </div>
+    </div>
+    <p class="colophon">© 2026 Milen Arro-Cannarsa</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
