@@ -24,21 +24,21 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
 <style>
   :root {
     --paper: #FBFAF7;
     --ink: #20201D;
-    --muted: #6E6C64;
-    --faint: #9C9A90;
+    --muted: #514F48;
+    --faint: #7C7A70;
     --hairline: #E5E2DA;
     --accent: #2E4B3F;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     background: var(--paper);
     color: var(--ink);
     line-height: 1.6;
@@ -48,6 +48,10 @@
 
   a { color: var(--accent); }
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .nav-links a, .hero-link, .cv-download, .section-number, .paper-meta, .tag, .cv-updated {
+    font-family: 'Josefin Sans', sans-serif; font-weight: 400;
+  }
 
   nav {
     position: sticky; top: 0; z-index: 10;
@@ -66,7 +70,7 @@
   }
   .nav-links { display: flex; gap: 1.8rem; }
   .nav-links a {
-    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase;
     color: var(--muted); text-decoration: none; transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--ink); }
@@ -82,18 +86,14 @@
     .hero { animation: none; }
     html { scroll-behavior: auto; }
   }
-  .eyebrow {
-    font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 1.4rem;
-  }
   .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(44px, 7vw, 62px); font-weight: 300; font-style: italic;
+    font-size: clamp(44px, 7vw, 62px); font-weight: 500;
     line-height: 1.04; margin-bottom: 1.8rem;
   }
   .hero-tagline {
-    font-size: 13px; letter-spacing: 0.07em; line-height: 2;
-    color: var(--muted); margin-bottom: 2.2rem; max-width: 40ch;
+    font-size: 14px; letter-spacing: 0.05em; line-height: 2;
+    color: var(--muted); margin-bottom: 1.4rem; max-width: 44ch;
   }
   .hero-links { display: flex; gap: 1.6rem; flex-wrap: wrap; }
   .hero-link {
@@ -103,6 +103,11 @@
     transition: opacity 0.2s;
   }
   .hero-link:hover { opacity: 0.55; }
+  .hy { font-family: 'Inter', sans-serif; font-weight: 400; }
+  .hero-interests { font-size: 15px; line-height: 1.75; color: #33322D; margin-bottom: 2rem; max-width: 44ch; }
+  .hero-contact { margin-top: 1.5rem; font-size: 14px; color: var(--muted); letter-spacing: 0.02em; }
+  .hero-contact a { color: var(--accent); text-decoration: none; }
+  .hero-contact a:hover { text-decoration: underline; }
 
   .cv-download {
     display: inline-block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
@@ -129,10 +134,10 @@
   .section-number { font-size: 10px; letter-spacing: 0.2em; color: var(--faint); }
   .section-header h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 32px; font-weight: 300; font-style: italic;
+    font-size: 32px; font-weight: 500;
   }
 
-  .about-body { font-size: 14.5px; line-height: 2; color: #4A4943; max-width: 660px; }
+  .about-body { font-size: 15.5px; line-height: 1.9; color: #33322D; max-width: 660px; }
   .about-body p { margin-bottom: 1.2rem; }
   .fields { display: flex; gap: 3.5rem; flex-wrap: wrap; margin-top: 2.2rem; }
   .field-group { min-width: 180px; }
@@ -141,7 +146,7 @@
     font-size: 9px; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase;
     color: var(--faint); margin-bottom: 0.7rem;
   }
-  .field-group p { font-size: 13px; color: var(--muted); line-height: 1.9; }
+  .field-group p { font-size: 14px; color: var(--muted); line-height: 1.9; }
 
   .paper { padding: 2.2rem 0; border-top: 1px solid var(--hairline); }
   .paper:last-of-type { border-bottom: 1px solid var(--hairline); }
@@ -151,10 +156,10 @@
   }
   .paper h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 23px; font-weight: 400; line-height: 1.3; margin-bottom: 0.4rem;
+    font-size: 23px; font-weight: 500; line-height: 1.3; margin-bottom: 0.4rem;
   }
-  .paper-authors { font-size: 12px; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 0.9rem; }
-  .paper-abstract { font-size: 13px; line-height: 1.95; color: #4A4943; max-width: 640px; margin-bottom: 1.1rem; }
+  .paper-authors { font-size: 13px; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 0.9rem; }
+  .paper-abstract { font-size: 14.5px; line-height: 1.85; color: #33322D; max-width: 640px; margin-bottom: 1.1rem; }
   .paper-tags { display: flex; gap: 0.6rem; flex-wrap: wrap; }
   .tag {
     display: inline-block; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
@@ -165,9 +170,9 @@
 
   .refs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
   .ref { background: #F5F3EE; padding: 1.8rem; }
-  .ref h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; margin-bottom: 0.25rem; }
-  .ref-title { font-size: 11.5px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.7; margin-bottom: 0.9rem; }
-  .ref a { font-size: 11.5px; letter-spacing: 0.03em; text-decoration: none; }
+  .ref h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; margin-bottom: 0.25rem; }
+  .ref-title { font-size: 12.5px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.7; margin-bottom: 0.9rem; }
+  .ref a { font-size: 12.5px; letter-spacing: 0.03em; text-decoration: none; line-height: 1.9; }
   .ref a:hover { text-decoration: underline; }
 
   footer { padding: 3.5rem 0 4rem; border-top: 1px solid var(--hairline); }
@@ -177,7 +182,7 @@
     font-size: 9px; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase;
     color: var(--faint); margin-bottom: 0.5rem;
   }
-  .contact-item p, .contact-item a { font-size: 13px; color: var(--muted); text-decoration: none; line-height: 1.8; }
+  .contact-item p, .contact-item a { font-size: 14px; color: var(--muted); text-decoration: none; line-height: 1.8; }
   .contact-item a:hover { color: var(--accent); }
   .colophon { margin-top: 3rem; font-size: 10px; letter-spacing: 0.12em; color: var(--faint); }
 
@@ -193,7 +198,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="nav-name" href="#top">Milen Arro-Cannarsa</a>
+    <a class="nav-name" href="#top">Milen Arro<span class="hy">-</span>Cannarsa</a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#research">Research</a>
@@ -207,14 +212,14 @@
 
   <header class="hero">
     <div>
-      <p class="eyebrow">PhD Candidate in Economics · Monetary Policy &amp; Business-Cycle Analysis</p>
-      <h1>Milen<br>Arro-Cannarsa</h1>
-      <p class="hero-tagline">University of Bern<br>Research Associate, Study Center Gerzensee<br>Foundation of the Swiss National Bank</p>
+      <h1>Milen<br>Arro<span class="hy">-</span>Cannarsa</h1>
+      <p class="hero-tagline">PhD Candidate in Economics, University of Bern<br>Research Associate, Study Center Gerzensee<br>Foundation of the Swiss National Bank</p>
+      <p class="hero-interests">My research interests lie in monetary policy and business-cycle analysis, with a focus on the Swiss economy.</p>
       <div class="hero-links">
         <a class="hero-link" href="#research">Research</a>
         <a class="hero-link" href="#cv">Curriculum vitae</a>
-        <a class="hero-link" href="mailto:milen.arro@szgerzensee.ch">Contact</a>
       </div>
+      <p class="hero-contact">Contact: <a href="mailto:milen.arro@szgerzensee.ch">milen.arro@szgerzensee.ch</a></p>
     </div>
     <div class="photo">
       <img src="photo.jpg" alt="Portrait of Milen Arro-Cannarsa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -228,9 +233,9 @@
       <h2>About</h2>
     </div>
     <div class="about-body">
-      <p>I am a monetary economist completing my PhD at the University of Bern under the supervision of Prof. Pierpaolo Benigno, and a research associate at the Study Center Gerzensee, the foundation of the Swiss National Bank, where I support the doctoral program and the courses for central bankers with exercise sessions and software training.</p>
-      <p>My research gives the safe-haven story a structural framework. In my job market paper, I develop an open-economy New Keynesian model in which foreign appetite for a country's liquid assets jointly produces appreciation, disinflation, and a liquidity trap of foreign origin, and in which the central bank's balance sheet becomes a second policy instrument. In plain terms, the paper answers two questions every Swiss institution lives with: why Swiss interest rates get stuck at low levels, and what moves the franc in a crisis.</p>
-      <p>The other half of my work is empirical. I co-authored an SNB working paper on machine-learning nowcasts of Swiss GDP. Before that, I spent a year in the SNB's business-cycle analysis unit, where I maintained the short-term forecasting models and carried sole responsibility for the foreign-trade forecasts for six months. Theory taught me how business cycles work, whereas forecasting made me fast and good with data.</p>
+      <p>I am a monetary economist, completing my PhD under the supervision of Prof. Pierpaolo Benigno.</p>
+      <p>My job market paper gives the Swiss safe-haven story a structural framework, in which foreign appetite for a country's liquid assets produces appreciation, disinflation, and a liquidity trap, and in which the central bank's balance sheet becomes a second policy instrument. In plain terms, it answers two questions every Swiss institution lives with: why Swiss interest rates get stuck at low levels, and what moves the franc in a crisis.</p>
+      <p>The other half of my work is empirical: an SNB working paper on machine-learning nowcasts of Swiss GDP, and a year in the SNB's business-cycle analysis unit, where I maintained the short-term forecasting models and carried sole responsibility for the foreign-trade forecasts for six months. Theory taught me how business cycles work, whereas forecasting made me fast and good with data.</p>
     </div>
     <div class="fields">
       <div class="field-group">
@@ -244,10 +249,6 @@
       <div class="field-group">
         <h3>Languages</h3>
         <p>German (C2) · English (C2)<br>Estonian (native)<br>Italian (B1) · Russian (B1)</p>
-      </div>
-      <div class="field-group">
-        <h3>Contact</h3>
-        <p><a href="mailto:milen.arro@szgerzensee.ch" style="color: var(--muted); text-decoration: none;">milen.arro@szgerzensee.ch</a></p>
       </div>
     </div>
   </section>
@@ -306,7 +307,8 @@
       <div class="ref">
         <h3>Prof. Pierpaolo Benigno</h3>
         <p class="ref-title">Professor of Economics<br>University of Bern</p>
-        <a href="mailto:pierpaolo.benigno@unibe.ch">pierpaolo.benigno@unibe.ch</a>
+        <a href="mailto:pierpaolo.benigno@unibe.ch">pierpaolo.benigno@unibe.ch</a><br>
+        <a href="https://benigno.ch/" target="_blank" rel="noopener">benigno.ch</a>
       </div>
       <div class="ref">
         <h3>Dr. Matthias Lutz</h3>
@@ -316,7 +318,8 @@
       <div class="ref">
         <h3>Prof. Martin Brown</h3>
         <p class="ref-title">Director<br>Study Center Gerzensee</p>
-        <a href="mailto:martin.brown@szgerzensee.ch">martin.brown@szgerzensee.ch</a>
+        <a href="mailto:martin.brown@szgerzensee.ch">martin.brown@szgerzensee.ch</a><br>
+        <a href="https://sites.google.com/view/martinbrown" target="_blank" rel="noopener">sites.google.com/view/martinbrown</a>
       </div>
     </div>
   </section>
