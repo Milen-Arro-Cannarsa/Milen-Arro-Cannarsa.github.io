@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Milen Arro-Cannarsa — Economist · PhD Candidate, University of Bern</title>
-<meta name="description" content="Milen Arro-Cannarsa is a PhD candidate in economics at the University of Bern and research associate at the Study Center Gerzensee (Foundation of the Swiss National Bank). Research on monetary policy, safe-haven currencies, and machine-learning nowcasting.">
+<meta name="description" content="Milen Arro-Cannarsa is a PhD candidate in economics at the University of Bern and research associate at the Study Center Gerzensee (Foundation of the Swiss National Bank), on the 2026–2027 academic job market. Research on monetary policy, international macroeconomics, and business-cycle analysis.">
 <meta property="og:title" content="Milen Arro-Cannarsa — Economist">
 <meta property="og:description" content="PhD candidate in economics, University of Bern. Research associate, Study Center Gerzensee — Foundation of the Swiss National Bank. Monetary economics, international macroeconomics, nowcasting.">
 <meta property="og:type" content="website">
@@ -49,7 +49,7 @@
   a { color: var(--accent); }
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-  .nav-links a, .hero-link, .cv-download, .section-number, .paper-meta, .tag, .cv-updated {
+  .nav-links a, .hero-link, .cv-download, .section-number, .paper-meta, .tag, .cv-updated, .jm-note {
     font-family: 'Josefin Sans', sans-serif; font-weight: 400;
   }
 
@@ -104,6 +104,7 @@
   }
   .hero-link:hover { opacity: 0.55; }
   .hy { font-family: 'Inter', sans-serif; font-weight: 400; }
+  .jm-note { font-size: 13.5px; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 1.2rem; }
   .hero-interests { font-size: 15px; line-height: 1.75; color: #33322D; margin-bottom: 2rem; max-width: 44ch; }
   .hero-contact { margin-top: 1.5rem; font-size: 14px; color: var(--muted); letter-spacing: 0.02em; }
   .hero-contact a { color: var(--accent); text-decoration: none; }
@@ -171,7 +172,7 @@
   .refs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
   .ref { background: #F5F3EE; padding: 1.8rem; }
   .ref h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; margin-bottom: 0.25rem; }
-  .ref-title { font-size: 12.5px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.7; margin-bottom: 0.9rem; }
+  .ref-title { font-size: 12.5px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.7; margin-bottom: 0.9rem; min-height: 5.1em; }
   .ref a { font-size: 12.5px; letter-spacing: 0.03em; text-decoration: none; line-height: 1.9; }
   .ref a:hover { text-decoration: underline; }
 
@@ -214,10 +215,11 @@
     <div>
       <h1>Milen<br>Arro<span class="hy">-</span>Cannarsa</h1>
       <p class="hero-tagline">PhD Candidate in Economics, University of Bern<br>Research Associate, Study Center Gerzensee<br>Foundation of the Swiss National Bank</p>
-      <p class="hero-interests">My research interests lie in monetary policy and business-cycle analysis, with a focus on the Swiss economy.</p>
+      <p class="jm-note">I'm on the 2026–2027 job market!</p>
+      <p class="hero-interests">My research interests lie in international macroeconomics, monetary policy, and business-cycle analysis.</p>
       <div class="hero-links">
         <a class="hero-link" href="#research">Research</a>
-        <a class="hero-link" href="#cv">Curriculum vitae</a>
+        <a class="hero-link" href="Arro-Cannarsa_CV.pdf">Curriculum vitae</a>
       </div>
       <p class="hero-contact">Contact: <a href="mailto:milen.arro@szgerzensee.ch">milen.arro@szgerzensee.ch</a></p>
     </div>
@@ -234,7 +236,7 @@
     </div>
     <div class="about-body">
       <p>I am a monetary economist, completing my PhD under the supervision of Prof. Pierpaolo Benigno.</p>
-      <p>My job market paper gives the Swiss safe-haven story a structural framework. In the model, foreign appetite for a country's liquid assets produces appreciation, disinflation, and a liquidity trap. The central bank's balance sheet becomes a second policy instrument against it. In plain terms, the paper answers two questions every Swiss institution lives with: why Swiss interest rates get stuck at low levels, and what moves the franc in a crisis.</p>
+      <p>My job market paper starts from a simple observation: Switzerland prints a paper the rest of the world wants to hold. When global demand for it increases, what happens next to the franc, to inflation, to interest rates depends on monetary policy, and especially on what the central bank does with its balance sheet. The paper builds an open-economy New Keynesian model with domestic assets providing convenience benefits and uses it to explain the Swiss experience after the Global Financial Crisis.</p>
       <p>The other half of my work is empirical: an SNB working paper on machine-learning nowcasts of Swiss GDP, and a year in the SNB's business-cycle analysis unit, where I maintained the short-term forecasting models and carried sole responsibility for the foreign-trade forecasts for six months. Theory taught me how business cycles work, whereas forecasting made me fast and good with data.</p>
     </div>
     <div class="fields">
@@ -261,8 +263,8 @@
 
     <article class="paper">
       <p class="paper-meta">Job market paper · 2026</p>
-      <h3>Flight to Liquidity: Monetary Policy in an Open Economy</h3>
-      <p class="paper-abstract">Safe-haven economies experience global crises as a package: foreign demand for their assets surges, the currency appreciates, inflation falls, and the policy rate is driven to its lower bound. This paper adds one ingredient to an open-economy New Keynesian model, domestic assets that provide liquidity services to the rest of the world, and shows that this single addition makes foreign demand a macroeconomic shock and the supply of the liquid asset a second monetary policy instrument. A modest expansion of that supply stabilizes inflation and output exactly and prevents the liquidity trap, while pegging the exchange rate requires an operation ten times as large and sets off an inflationary boom.</p>
+      <h3>Flight to Safety: Monetary Policy in an Open Economy</h3>
+      <p class="paper-abstract">Safe-haven economies experience global crises as a package: foreign demand for their assets increases, the currency appreciates, inflation falls, and the policy rate is driven to its lower bound. Switzerland spent a decade in this configuration while its central bank's balance sheet grew to nearly 1.5 times GDP. This paper adds one ingredient to an open-economy New Keynesian model: domestic assets provide convenience benefits to the rest of the world. Foreign demand then becomes a macroeconomic shock, strong enough on its own to drive the policy rate to the bound, creating a liquidity trap of foreign origin, and the supply of the convenient asset becomes a second instrument against it. A modest expansion, on the scale of the Swiss National Bank's own expansion after the crisis, keeps inflation and output at target while the policy rate never moves. Defending the exchange rate instead requires an operation twenty times larger and sets off an inflationary boom, with no cheap option in between. The financing decides who receives the income a safe haven earns: households, or the central bank's balance sheet.</p>
       <div class="paper-tags">
         <span class="tag">Draft available on request</span>
       </div>
@@ -306,20 +308,20 @@
     <div class="refs">
       <div class="ref">
         <h3>Prof. Pierpaolo Benigno</h3>
-        <p class="ref-title">Professor of Economics<br>University of Bern</p>
+        <p class="ref-title">PhD Supervisor<br>Professor of Economics<br>University of Bern</p>
         <a href="mailto:pierpaolo.benigno@unibe.ch">pierpaolo.benigno@unibe.ch</a><br>
         <a href="https://benigno.ch/" target="_blank" rel="noopener">benigno.ch</a>
       </div>
       <div class="ref">
-        <h3>Dr. Matthias Lutz</h3>
-        <p class="ref-title">Economic Advisor<br>Swiss National Bank</p>
-        <a href="mailto:matthias.lutz@snb.ch">matthias.lutz@snb.ch</a>
-      </div>
-      <div class="ref">
         <h3>Prof. Martin Brown</h3>
-        <p class="ref-title">Director<br>Study Center Gerzensee</p>
+        <p class="ref-title">Director and Professor of Financial Economics<br>Study Center Gerzensee</p>
         <a href="mailto:martin.brown@szgerzensee.ch">martin.brown@szgerzensee.ch</a><br>
         <a href="https://sites.google.com/view/martinbrown" target="_blank" rel="noopener">sites.google.com/view/martinbrown</a>
+      </div>
+      <div class="ref">
+        <h3>Dr. Rolf Scheufele</h3>
+        <p class="ref-title">Deputy Head of Forecast and Analysis Switzerland<br>Swiss National Bank</p>
+        <a href="mailto:rolf.scheufele@snb.ch">rolf.scheufele@snb.ch</a>
       </div>
     </div>
   </section>
