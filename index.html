@@ -161,7 +161,9 @@
   }
   .paper-authors { font-size: 13px; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 0.9rem; }
   .paper-abstract { font-size: 14.5px; line-height: 1.85; color: #33322D; max-width: 640px; margin-bottom: 1.1rem; }
-  .paper-tags { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .paper-tags { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0.6rem 0 1.1rem; }
+  .paper h3 a { color: inherit; text-decoration: none; }
+  .paper h3 a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .tag {
     display: inline-block; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
     border: 1px solid #CFCCC2; padding: 4px 11px; color: var(--muted); text-decoration: none;
@@ -218,6 +220,7 @@
       <p class="jm-note">I'm on the 2026–2027 job market!</p>
       <p class="hero-interests">My research interests lie in international macroeconomics, monetary policy, and business-cycle analysis.</p>
       <div class="hero-links">
+        <a class="hero-link" href="Arro-Cannarsa_JMP.pdf" target="_blank" rel="noopener">Job market paper</a>
         <a class="hero-link" href="#research">Research</a>
         <a class="hero-link" href="Arro-Cannarsa_CV.pdf">Curriculum vitae</a>
       </div>
@@ -263,30 +266,30 @@
 
     <article class="paper">
       <p class="paper-meta">Job market paper · 2026</p>
-      <h3>Flight to Safety: Monetary Policy in an Open Economy</h3>
-      <p class="paper-abstract">Safe-haven economies experience global crises as a package: foreign demand for their assets increases, the currency appreciates, inflation falls, and the policy rate is driven to its lower bound. Switzerland spent a decade in this configuration while its central bank's balance sheet grew to nearly 1.5 times GDP. This paper adds one ingredient to an open-economy New Keynesian model: domestic assets provide convenience benefits to the rest of the world. Foreign demand then becomes a macroeconomic shock, strong enough on its own to drive the policy rate to the bound, creating a liquidity trap of foreign origin, and the supply of the convenient asset becomes a second instrument against it. A modest expansion, on the scale of the Swiss National Bank's own expansion after the crisis, keeps inflation and output at target while the policy rate never moves. Defending the exchange rate instead requires an operation twenty times larger and sets off an inflationary boom, with no cheap option in between. The financing decides who receives the income a safe haven earns: households, or the central bank's balance sheet.</p>
+      <h3><a href="Arro-Cannarsa_JMP.pdf" target="_blank" rel="noopener">Flight to Safety: Monetary Policy in an Open Economy</a></h3>
       <div class="paper-tags">
-        <span class="tag">Draft available on request</span>
+        <a class="tag" href="Arro-Cannarsa_JMP.pdf" target="_blank" rel="noopener">Latest version (PDF)</a>
       </div>
+      <p class="paper-abstract">Safe-haven economies experience global crises as a package: foreign demand for their assets increases, the currency appreciates, inflation falls, and the policy rate is driven to its lower bound. Switzerland spent a decade in this configuration while its central bank's balance sheet grew to nearly 1.5 times GDP. This paper adds one ingredient to an open-economy New Keynesian model: domestic assets provide convenience benefits to the rest of the world. Foreign demand then becomes a macroeconomic shock, strong enough on its own to drive the policy rate to the bound, creating a liquidity trap of foreign origin, and the supply of the convenient asset becomes a second instrument against it. A modest expansion, on the scale of the Swiss National Bank's own expansion after the crisis, keeps inflation and output at target while the policy rate never moves. Defending the exchange rate instead requires an operation twenty times larger and sets off an inflationary boom, with no cheap option in between. The financing decides who receives the income a safe haven earns: households, or the central bank's balance sheet.</p>
     </article>
 
     <article class="paper">
       <p class="paper-meta">SNB Working Papers 2024-06 · Swiss National Bank</p>
-      <h3>Nowcasting GDP: What Are the Gains from Machine Learning Algorithms?</h3>
+      <h3><a href="https://www.snb.ch/en/publications/research/working-papers/2024/working_paper_2024_06" target="_blank" rel="noopener">Nowcasting GDP: What Are the Gains from Machine Learning Algorithms?</a></h3>
       <p class="paper-authors">with Rolf Scheufele</p>
-      <p class="paper-abstract">We compare penalized regressions (LASSO, ridge, elastic net), tree ensembles (bagging, random forest, gradient boosting), and support vector regression for nowcasting Swiss GDP, using a mixed-frequency data set of more than 1,100 series that accounts for publication lags. After the Great Recession, all machine-learning methods beat the univariate benchmark by up to 28% in out-of-sample RMSE; ridge, elastic net, and SVR perform best.</p>
       <div class="paper-tags">
         <a class="tag" href="https://www.snb.ch/en/publications/research/working-papers/2024/working_paper_2024_06" target="_blank" rel="noopener">Working paper — SNB</a>
       </div>
+      <p class="paper-abstract">We compare penalized regressions (LASSO, ridge, elastic net), tree ensembles (bagging, random forest, gradient boosting), and support vector regression for nowcasting Swiss GDP, using a mixed-frequency data set of more than 1,100 series that accounts for publication lags. After the Great Recession, all machine-learning methods beat the univariate benchmark by up to 28% in out-of-sample RMSE; ridge, elastic net, and SVR perform best.</p>
     </article>
 
     <article class="paper">
       <p class="paper-meta">Work in progress</p>
       <h3>Optimal Supply of Liquidity</h3>
-      <p class="paper-abstract">I study the optimal supply of safe, liquid assets in an open economy, where the government trades off providing liquidity to domestic agents against extracting seigniorage from the rest of the world.</p>
       <div class="paper-tags">
         <span class="tag">In progress</span>
       </div>
+      <p class="paper-abstract">I study the optimal supply of safe, liquid assets in an open economy, where the government trades off providing liquidity to domestic agents against extracting seigniorage from the rest of the world.</p>
     </article>
   </section>
 
