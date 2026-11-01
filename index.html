@@ -175,10 +175,10 @@
   a.tag { color: var(--accent); border-color: var(--accent); transition: opacity 0.2s; }
   a.tag:hover { opacity: 0.65; }
 
-  .refs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
-  .ref { background: #F5F3EE; padding: 1.8rem; }
+  .refs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
+  .ref { background: #F5F3EE; padding: 1.8rem; display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0; }
   .ref h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; margin-bottom: 0.25rem; }
-  .ref-title { font-size: 12.5px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.7; margin-bottom: 0.9rem; min-height: 5.1em; }
+  .ref-title { font-size: 12.5px; color: var(--muted); letter-spacing: 0.05em; line-height: 1.7; margin-bottom: 0.9rem; }
   .ref a { font-size: 12.5px; letter-spacing: 0.03em; text-decoration: none; line-height: 1.9; }
   .ref a:hover { text-decoration: underline; }
 
@@ -196,7 +196,11 @@
   @media (max-width: 720px) {
     .hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 0; }
     .photo { max-width: 320px; }
+    .refs { grid-template-columns: 1fr; }
+    .nav-name { display: none; }
+    .nav-inner { justify-content: center; padding: 1rem; }
     .nav-links { gap: 1.1rem; }
+    .nav-links a { letter-spacing: 0.12em; }
     section { padding: 3.2rem 0; }
   }
 </style>
@@ -304,19 +308,33 @@
       <div class="ref">
         <h3>Prof. Pierpaolo Benigno</h3>
         <p class="ref-title">PhD Supervisor<br>Professor of Economics<br>University of Bern</p>
-        <a href="mailto:pierpaolo.benigno@unibe.ch">pierpaolo.benigno@unibe.ch</a><br>
-        <a href="https://benigno.ch/" target="_blank" rel="noopener">benigno.ch</a>
+        <div class="ref-links">
+          <a href="mailto:pierpaolo.benigno@unibe.ch">pierpaolo.benigno@unibe.ch</a><br>
+          <a href="https://benigno.ch/" target="_blank" rel="noopener">benigno.ch</a>
+        </div>
       </div>
       <div class="ref">
         <h3>Prof. Martin Brown</h3>
         <p class="ref-title">Director and Professor of Financial Economics<br>Study Center Gerzensee</p>
-        <a href="mailto:martin.brown@snb.ch">martin.brown@snb.ch</a><br>
-        <a href="https://sites.google.com/view/martinbrown" target="_blank" rel="noopener">sites.google.com/view/martinbrown</a>
+        <div class="ref-links">
+          <a href="mailto:martin.brown@snb.ch">martin.brown@snb.ch</a><br>
+          <a href="https://sites.google.com/view/martinbrown" target="_blank" rel="noopener">sites.google.com/view/martinbrown</a>
+        </div>
       </div>
       <div class="ref">
         <h3>Dr. Rolf Scheufele</h3>
         <p class="ref-title">Deputy Head of Forecast and Analysis Switzerland<br>Swiss National Bank</p>
-        <a href="mailto:rolf.scheufele@snb.ch">rolf.scheufele@snb.ch</a>
+        <div class="ref-links">
+          <a href="mailto:rolf.scheufele@snb.ch">rolf.scheufele@snb.ch</a>
+        </div>
+      </div>
+      <div class="ref">
+        <h3>Prof. Harris Dellas</h3>
+        <p class="ref-title">Professor of Economics, University of Surrey<br>Emeritus, University of Bern</p>
+        <div class="ref-links">
+          <a href="mailto:harris.dellas@gmail.com">harris.dellas@gmail.com</a><br>
+          <a href="https://harrisdellas.net" target="_blank" rel="noopener">harrisdellas.net</a>
+        </div>
       </div>
     </div>
   </section>
